@@ -48,6 +48,7 @@ UL{
 	font-size: 90%;
 }
 
-nav{
+nav ul{
 	outline: 0px;
+	background-color: transparent;
 }
