@@ -124,6 +124,9 @@ img{
 	padding-left: 15px;
 	padding-right: 15px;
 }
+.intro td{
+	padding:0 12px;
+}
 
 .blink{
 	animation: blink 1s step-start infinite;
