@@ -1,7 +1,7 @@
 body {
 	line-height: 1;
 	background-color: pink;
-	background-image: url(https://file.garden/ZWlUCY4S7Xz2vypS/archived%20backgrounds/!!!%20NEW%20!!!/tiles/b30.gif);
+	background-image: url(images/rainbowbg.gif);
 	text-align: center;
 }
 
@@ -9,14 +9,10 @@ h1, h3{
 	font-family: 'Courier New', Courier, monospace;
 }
 
-p{
+p, figcaption{
 	font-size: 100%;
 	font-family: 'Times New Roman', Times, serif;
 	line-height: 125%;
-	padding: 10px;
-	padding-top: 15px;
-	background-color: rgb(243, 144, 243);
-	outline: 1px solid red;
 }
 
 p a{
@@ -43,12 +39,14 @@ UL{
 	outline: 2px purple dashed;
 }
 
+.box{
+	padding: 10px;
+	padding-top: 15px;
+	background-color: rgb(243, 144, 243);
+	outline: 1px solid red;
+}
+
 .contact{
 	text-align:left;
 	font-size: 90%;
-}
-
-nav ul{
-	outline: 0px;
-	background-color: transparent;
 }
