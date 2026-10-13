@@ -17,9 +17,17 @@ body {
 	box-sizing: border-box;
 }
 
-/* 标题样式 */
+/* 全局 h 系列的标题样式 */
 h1, h3{
 	font-family: 'Courier New', Courier, monospace;
+}
+
+/* 默认超链接格式 */
+a{
+	color:#0000ff;
+}
+a:visited{
+	color: #800080;
 }
 
 /* 全局 默认 文字 字体！ */
@@ -29,7 +37,7 @@ p, figcaption{
 	line-height: 125%;
 }
 
-/* 在文字中的链接是怎么显示的？（比如this is my little *homepage*） */
+/* 在文字中的默认链接是怎么显示的？（比如this is my little *homepage*） */
 p a{
 	color: #8000ff;
 	text-decoration: none;
@@ -56,12 +64,12 @@ UL{
 }
 
 
+/* 真正页面的那三个仿 Win98 的按钮 */
 nav ul{
 	outline:none;
 	background-color: transparent;
 	padding: 0;
 }
-
 nav a, nav a:visited{
 	display: inline-block;
 	padding:4px 14px;
@@ -72,33 +80,33 @@ nav a, nav a:visited{
 	font-family: Arial, sans-serif, Helvetica;
 	text-decoration: none;
 }
-
 nav a:active{
 	border-style: groove;
 }
 
+
+/* 全局图片统一格式（大香蕉） */
 figure img{
 	width: 100px;
 	max-width: 100%;
 	height:auto;
 }
 
-a{
-	color:#0000ff;
-}
-a:visited{
-	color: #800080;
-}
 
 .myClass{
 	text-align: left;
 	outline: 2px purple dashed;
 }
 
+/* 头部大标题 */
 .headLogoTxt{
 	color: black;
 	text-decoration: none;
 }
+.headLogoTxt a:hover{
+	color:black;
+}
+
 
 .box{
 	padding: 10px;
