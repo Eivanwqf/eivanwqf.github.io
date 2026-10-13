@@ -7,24 +7,29 @@ body {
 	text-align: center;
 }
 
+/* 用来装实际上显示的文字的 */
 #container{
 	max-width: 760px;
 	margin:0 auto;
 	/* background-color: #ececff; */
 	border: 5px inset #0000ff;
 	padding: 10px;
+	box-sizing: border-box;
 }
 
+/* 标题样式 */
 h1, h3{
 	font-family: 'Courier New', Courier, monospace;
 }
 
+/* 全局 默认 文字 字体！ */
 p, figcaption{
 	font-size: 100%;
 	font-family: 'Times New Roman', Times, serif;
 	line-height: 125%;
 }
 
+/* 在文字中的链接是怎么显示的？（比如this is my little *homepage*） */
 p a{
 	color: #8000ff;
 	text-decoration: none;
@@ -34,9 +39,15 @@ p a:hover{
 	text-decoration: underline;
 }
 
+/* List Items*/
+li {
+	text-align: left;
+}
+
+/* 全局的无序清单 */
 UL{
-	font-size: 110%;
-	font-family: Verdana;
+	font-size: 100%;
+	font-family: 'Gill Sans', Calibri, sans-serif;
 	line-height: 125%;
 	padding-right: 50px;
 	padding-left: 50px;
@@ -44,17 +55,33 @@ UL{
 	outline: 2px solid red;
 }
 
+
 nav ul{
 	outline:none;
 	background-color: transparent;
 	padding: 0;
 }
 
-nav a:active{
-	border-style: inset;
+nav a, nav a:visited{
+	display: inline-block;
+	padding:4px 14px;
+	margin: 2px;
+	background-color: #c0c0c0;
+	border: 3px outset #ffffff;
+	color: #0f0f0f;
+	font-family: Arial, sans-serif, Helvetica;
+	text-decoration: none;
 }
 
+nav a:active{
+	border-style: groove;
+}
 
+figure img{
+	width: 100px;
+	max-width: 100%;
+	height:auto;
+}
 
 a{
 	color:#0000ff;
@@ -66,6 +93,11 @@ a:visited{
 .myClass{
 	text-align: left;
 	outline: 2px purple dashed;
+}
+
+.headLogoTxt{
+	color: black;
+	text-decoration: none;
 }
 
 .box{
