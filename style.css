@@ -5,9 +5,16 @@ body {
 	text-align: center;
 }
 
+h1{
+	font-family: 'Courier New', Courier, monospace;
+}
+h3{
+	font-family: 'Courier New', Courier, monospace;
+}
+
 p{
 	font-size: 100%;
-	font-family: g;
+	font-family: 'Times New Roman', Times, serif;
 	line-height: 125%;
 	padding: 10px;
 	padding-top: 15px;
@@ -37,4 +44,9 @@ UL{
 .myClass{
 	text-align: left;
 	outline: 2px purple dashed;
+}
+
+ol{
+	text-align:left;
+	font-size: 90%;
 }
