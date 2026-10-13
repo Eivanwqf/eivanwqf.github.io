@@ -1,7 +1,7 @@
 body {
 	line-height: 1;
 	background-color: pink;
-	background-image: url(https://bluef00t.neocities.org/music/tmbg/TMBG14pink.png);
+	background-image: url(https://file.garden/ZWlUCY4S7Xz2vypS/archived%20backgrounds/!!!%20NEW%20!!!/tiles/b30.gif);
 	text-align: center;
 }
 
@@ -46,4 +46,8 @@ UL{
 .contact{
 	text-align:left;
 	font-size: 90%;
+}
+
+nav{
+	outline: 0px;
 }
