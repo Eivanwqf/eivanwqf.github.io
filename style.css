@@ -103,7 +103,7 @@ figure img{
 	color: black;
 	text-decoration: none;
 }
-.headLogoTxt a:hover{
+.headLogoTxt .headLogoTxt:visited{
 	color:black;
 }
 
