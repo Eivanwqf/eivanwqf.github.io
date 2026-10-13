@@ -53,7 +53,7 @@ li {
 }
 
 /* 全局的无序清单 */
-UL{
+ul{
 	font-size: 100%;
 	font-family: 'Gill Sans', Calibri, sans-serif;
 	line-height: 125%;
@@ -86,10 +86,11 @@ nav a:active{
 
 
 /* 全局图片统一格式（大香蕉） */
-figure img{
+img{
 	width: 100px;
 	max-width: 100%;
 	height:auto;
+	align-content: 10px;
 }
 
 
@@ -118,10 +119,16 @@ figure img{
 	padding-left: 10px;
 }
 
+.intro{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
 .blink{
 	animation: blink 1s step-start infinite;
-	color: red;
+	color: #ff3333;
 	font-weight: bold;
+	text-shadow: 1px 1px 0 white;
 }
 @keyframes blink{
 	50% {opacity: 0;}
