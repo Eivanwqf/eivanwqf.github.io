@@ -5,6 +5,7 @@ body {
 	background-repeat: repeat-y;
 	background-size:100% auto;
 	text-align: center;
+	font-family: 'Times New Roman', Times, serif;
 }
 
 /* 用来装实际上显示的文字的 */
