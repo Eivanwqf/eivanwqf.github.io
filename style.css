@@ -57,17 +57,20 @@ li {
 	text-align: left;
 }
 
-/* 全局的无序清单 */
-ul{
+/* 全局的无序清单和盒子居中文字 */
+ul, .box{
 	font-size: 100%;
-	font-family: 'Gill Sans', Calibri, sans-serif;
-	line-height: 120%;
-	padding-right: 50px;
-	padding-left: 50px;
+	font-family: 'Gill Sans', Calibri, 'Pingfang SC', sans-serif;
+	line-height: 120%; 
 	background-color: pink;
 	outline: 2px solid red;
 }
+ul{
+	/* 前面带圆点的文字统一往右移一点 padding */
+	padding: 5px 5px 5px 30px;
+}
 
+/* 测试段落，why the fuck does every p */
 
 /* 真正页面的那三个仿 Win98 的按钮 */
 nav ul{
@@ -107,12 +110,12 @@ figure img{
 }
 
 
-.box{
+/* .box{
 	padding: 10px;
 	padding-top: 15px;
 	background-color: rgb(243, 144, 243);
 	outline: 1px solid red;
-}
+} */
 
 /* 页尾后的分割线尾巴 */
 .bottom{
@@ -146,7 +149,13 @@ figure img{
 }
 
 /* 正文的正经字体 */
-
+.blogfont{
+	font-family: 'Times New Roman', Times,
+		'Songti SC',
+		'SimSun',
+		'Noto Serif SC',
+		serif;;
+}
 
 /* 红色文字闪光 */
 .blink{
