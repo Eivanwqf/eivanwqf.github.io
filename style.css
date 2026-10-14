@@ -14,7 +14,7 @@ body {
 	margin:0 auto;
 	/* background-color: #ececff; */
 	border: 5px inset #0000ff;
-	padding: 10px;
+	padding: 8px;
 	box-sizing: border-box;
 }
 
@@ -91,13 +91,6 @@ img{
 	width: 100px;
 	max-width: 100%;
 	height:auto;
-	align-content: 10px;
-}
-
-
-.myClass{
-	text-align: left;
-	outline: 2px purple dashed;
 }
 
 /* 头部大标题 */
@@ -114,15 +107,14 @@ img{
 	outline: 1px solid red;
 }
 
-.contact{
-	text-align:left;
+.bottom{
+	text-align:center;
 	font-size: 90%;
 	padding-left: 10px;
 }
 
 .intro{
-	padding-left: 15px;
-	padding-right: 15px;
+	width:100%;
 }
 .intro td{
 	padding:0 12px;
