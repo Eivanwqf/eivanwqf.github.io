@@ -5,7 +5,11 @@ body {
 	background-repeat: repeat-y;
 	background-size:100% auto;
 	text-align: center;
-	font-family: 'Times New Roman', Times, serif;
+	font-family: 'Times New Roman', Times,
+		'Songti SC',
+		'SimSun',
+		'Noto Serif SC',
+		serif;
 }
 
 /* 用来装实际上显示的文字的 */
@@ -19,7 +23,7 @@ body {
 }
 
 /* 全局 h 系列的标题样式 */
-h1, h3{
+h1, h2, h3{
 	font-family: 'Courier New', Courier, monospace;
 }
 
@@ -57,7 +61,7 @@ li {
 ul{
 	font-size: 100%;
 	font-family: 'Gill Sans', Calibri, sans-serif;
-	line-height: 125%;
+	line-height: 120%;
 	padding-right: 50px;
 	padding-left: 50px;
 	background-color: pink;
@@ -110,14 +114,16 @@ figure img{
 	outline: 1px solid red;
 }
 
+/* 页尾后的分割线尾巴 */
 .bottom{
 	text-align:center;
 	font-size: 85%;
 	padding-left: 10px;
 }
 
+/* 页面最下方的联系方式 */
 .contact{
-	text-align: center;
+	margin:0 auto;
 	font-family: 'Courier New', Courier, monospace;
 }
 .contact td{
@@ -126,6 +132,7 @@ figure img{
 .contact img{
 	width: 40px;
 }
+
 
 /* 开头的头像和bio */
 .intro{
@@ -138,12 +145,19 @@ figure img{
 	width: 500px;
 }
 
+/* 正文的正经字体 */
+
+
+/* 红色文字闪光 */
 .blink{
-	animation: blink 1s step-start infinite;
+	animation: blink 0.5s step-start infinite;
 	color: #ff3333;
 	font-weight: bold;
 	text-shadow: 1px 1px 0 white;
 }
 @keyframes blink{
+	0% {opacity: 100;}
 	50% {opacity: 0;}
+	100% {opacity: 100;}
 }
+
