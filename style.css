@@ -88,9 +88,12 @@ nav a:active{
 
 /* 全局图片统一格式（大香蕉） */
 img{
-	width: 100px;
 	max-width: 100%;
 	height:auto;
+}
+
+figure img{
+	width: 100px;
 }
 
 /* 头部大标题 */
@@ -109,15 +112,29 @@ img{
 
 .bottom{
 	text-align:center;
-	font-size: 90%;
+	font-size: 85%;
 	padding-left: 10px;
 }
 
+.contact{
+	text-align: center;
+}
+.contact td{
+	padding: 0 12px;
+}
+.contact img{
+	width: 40px;
+}
+
+/* 开头的头像和bio */
 .intro{
 	width:100%;
 }
 .intro td{
 	padding:0 12px;
+}
+.intro img{
+	width: 500px;
 }
 
 .blink{
