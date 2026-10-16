@@ -29,10 +29,17 @@ h1, h2, h3{
 
 /* 默认超链接格式 */
 a{
-	color:#0000ff;
+	color: #000;
 }
 a:visited{
-	color: #800080;
+	color: #000;
+	text-shadow: 1px 1px 0 gray;
+}
+
+marquee{
+	padding: 5px;
+	color:rgb(19, 146, 140);
+	text-shadow: 1px 1px 0 white;
 }
 
 /* 全局 默认 文字 字体！ */
@@ -128,9 +135,11 @@ figure img{
 .contact{
 	margin:0 auto;
 	font-family: 'Courier New', Courier, monospace;
+	table-layout: fixed;
+	width: 400px;
 }
 .contact td{
-	padding: 0 12px;
+	padding: 0 1px;
 }
 .contact img{
 	width: 40px;
@@ -155,6 +164,32 @@ figure img{
 		'SimSun',
 		'Noto Serif SC',
 		serif;;
+}
+
+.vertical-text{
+	writing-mode: vertical-rl;
+	white-space: nowrap;
+	font-family: 'Courier New', Courier, monospace;
+}
+.vertical-marquee{
+	position: fixed;
+	top:0;
+	right:0;
+	width: 10px;
+	height: 100vh;
+	z-index:100;
+
+	/* Windows98-ish style */
+	background: linear-gradient(to bottom, #000080, #1084d0, #000080);
+	background-size: 100% 200%;
+	animation: titlebar-flow 2s linear infinite;
+	color:yellow;
+	border-left: 3px inset #c0c0c0;
+}
+
+@keyframes titlebar-flow{
+	from { background-position:0 0;}
+	to { background-position: 0 -200%;}
 }
 
 /* 红色文字闪光 */
