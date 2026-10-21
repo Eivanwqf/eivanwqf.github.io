@@ -137,7 +137,8 @@ figure img{
 	margin:0 auto;
 	font-family: 'Courier New', Courier, monospace;
 	table-layout: fixed;
-	width: 400px;
+	width: 100%;
+	max-width: 400px;
 }
 .contact td{
 	padding: 0 1px;
