@@ -85,6 +85,10 @@ marquee{
 	white-space: nowrap;
 	font-family: 'Courier New', Courier, monospace;
 }
+.vertical-text-chinese{
+	position: relative;
+	left: -3px;
+}
 .vertical-marquee{
 	position: fixed;
 	top:0;
