@@ -5,6 +5,7 @@ body {
 	background-repeat: repeat-y;
 	background-size:100% auto;
 	text-align: center;
+	padding-right: 15px;
 	font-family: 'Times New Roman', Times,
 		'Songti SC',
 		'SimSun',
@@ -168,9 +169,16 @@ figure img{
 
 .vertical-text{
 	writing-mode: vertical-rl;
-	white-space: nowrap;
 	font-family: 'Courier New', Courier, monospace;
 }
+.vertical-text-chinese{
+	writing-mode: vertical-rl;
+	white-space: nowrap;
+	font-family: 'Courier New', Courier, monospace;
+	position: relative;
+	left: -4px;
+}
+
 .vertical-marquee{
 	position: fixed;
 	top:0;

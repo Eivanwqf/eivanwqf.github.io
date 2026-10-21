@@ -1,0 +1,170 @@
+body {
+	line-height: 1;
+	background-color: gray;
+	background-image: url(images/bgfalleaves.gif.jpeg);
+	background-size:16% auto;
+	text-align: center;
+	padding-right: 15px;
+	font-family: 'Times New Roman', Times,
+		'Songti SC',
+		'SimSun',
+		'Noto Serif SC',
+		serif;
+}
+
+/* 用来装实际上显示的文字的 */
+#container{
+	max-width: 760px;
+	margin:0 auto;
+	/* background-color: #ececff; */
+	border: 5px inset #0000ff;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+/* 全局 h 系列的标题样式 */
+h1, h2, h3{
+	font-family: 'Courier New', Courier, monospace;
+}
+
+/* 默认超链接格式 */
+a{
+	color: #000;
+}
+a:visited{
+	color: #000;
+	text-shadow: 1px 1px 0 gray;
+}
+
+/* 真正页面的那三个仿 Win98 的按钮 */
+nav{
+	outline:none;
+	background-color: transparent;
+	padding: 0;
+}
+nav a, nav a:visited{
+	display: inline-block;
+	padding:4px 14px;
+	margin: 2px;
+	background-color: #c0c0c0;
+	border: 3px outset #ffffff;
+	color: #0f0f0f;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+nav a:active{
+	border-style: groove;
+}
+
+/* 全局图片统一格式（大香蕉） */
+img{
+	max-width: 100%;
+	height:auto;
+}
+
+/* 头部大标题 */
+.headLogoTxt, .headLogoTxt:visited{
+	color: black;
+	text-decoration: none;
+}
+
+
+@keyframes titlebar-flow{
+	from { background-position:0 0;}
+	to { background-position: 0 -200%;}
+}
+
+marquee{
+	padding: 5px;
+	color:rgb(19, 146, 140);
+	text-shadow: 1px 1px 0 white;
+}
+
+.vertical-text{
+	writing-mode: vertical-rl;
+	white-space: nowrap;
+	font-family: 'Courier New', Courier, monospace;
+}
+.vertical-marquee{
+	position: fixed;
+	top:0;
+	right: 0;
+	width: 10px;
+	height: 100vh;
+	z-index:100;
+
+	/* Windows98-ish style */
+	background: linear-gradient(to bottom, #000080, #1084d0, #000080);
+	background-size: 100% 200%;
+	animation: titlebar-flow 2s linear infinite;
+	color:yellow;
+}
+
+/* 整个帖子流：帖子纵向排列，彼此之间留 16px */
+.feed{
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	margin: 16px 0;
+}
+
+/* 每一条帖子：一个 Win98 灰色窗口 */
+.post{
+	text-align: left;            /* 正文靠左，覆盖掉 body 的居中 */
+	background-color: #c0c0c0;
+	border: 3px outset #ffffff;
+	font-family: 'MS Sans Serif', Tahoma;
+
+	/* 极其重要！在高贵的 macOS 上关闭高贵的字体平滑，
+	这样才像老穷风的 Windows98. */
+	-webkit-font-smoothing: none;  /* 如果不要就改成 none */
+}
+
+/* 每一个帖子的样式 */
+/* 标题栏 */
+.post-titlebar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 5px;
+	background: linear-gradient(to right, #000080, #1084d0);
+	color: white;
+	font-family: 'MS Sans Serif', Tahoma;
+	font-weight: bold;
+	font-size: 80%;
+}
+
+/* 正文 */
+.post-body{
+	padding: 5px 10px;
+	line-height: 1.25;      
+	text-indent: 2em;
+}
+
+/* 正文中的图片 */
+.post-body img{
+	display: block;              
+	max-height: 300px;          
+	border: 2px inset #ffffff;   
+	margin-bottom: 1em;
+}
+
+/* 长帖子的展开全文，用details，HTML 自带的折叠 */
+.post-body summary{
+	cursor: pointer;
+	color: #000080;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+/* 每个帖子的页脚，目前用来做日期时间戳 */
+.post-footer {
+	font-size: 50%;
+	padding: 0 5px;
+}
+
+
+/* 翻页按钮：已经从 nav a 继承了 Win98 按钮外观，这里只管位置 */
+.pager{
+	margin: 8px 0 16px;
+}

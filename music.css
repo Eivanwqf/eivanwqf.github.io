@@ -1,0 +1,13 @@
+body {
+	line-height: 1;
+	background-color: gray;
+	background-image: url(images/pbgcatsyellow.jpg);
+	background-size:100% auto;
+	text-align: center;
+	padding-right: 0;
+	font-family: 'Times New Roman', Times,
+		'Songti SC',
+		'SimSun',
+		'Noto Serif SC',
+		serif;
+}

@@ -1,26 +1,84 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh-CN">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Eivanwqf's Blogs</title>
-        <link rel="stylesheet" href="style.css">
+        <!-- 这个页面只引入 blogs.css，里面已经复制了需要的 style.css 样式 -->
+        <link rel="stylesheet" href="blogs.css">
     </head>
     <body>
         <div id="container">
-        <header>
-            <a href="index.html" class="headLogoTxt"><h1>Eivanwqf's Homepage</h1></a>
+            <header>
+                <a href="index.html" class="headLogoTxt"><h1>Eivanwqf's Homepage</h1></a>
+                <nav>
+                    <a href="index.html">Love</a>
+                    <a href="music.html">Music</a>
+                    <a href="blogs.html">Blogs</a>
+                    <a href="aboutme.html">About Me</a>
+                </nav>
+            </header>
             <h2>my silly blogs :/</h2>
-        </header>
-        <main>
-            <ul>
-                <li>
-                    <div class="blogfont">
-                        现在是 2026-10-14，这个现在仅仅是测试了
+               
+            <main class="feed">
+                <!-- 帖子 1 -->
+                <article class="post">
+                    <header class="post-titlebar">
+                        你好，师姐？
+                    </header>
+                    <div class="post-body">
+                        <p>Hello World. What are you talking about??
+                        </p>
                     </div>
-                </li>
-            </ul>
-        </main>
+                    <footer class="post-footer">
+                        im tired, bye
+                    </footer>
+                </article>
+
+                <!-- 帖子 2：很长的帖子，用 details 折叠起来 -->
+                <article class="post">
+                    <header class="post-titlebar">
+                        这些他妈不是我说的话，谁放里的
+                    </header>
+                    <div class="post-body">
+                        <p>   f  学会了 flex，感觉打开了新世界。以前想让两个东西并排，要么用 float，要么用 table，现在三行 CSS 就搞定了。</p>
+                        <details>
+                            <summary>展开全文</summary>
+                            <p>记一下今天学到的：display: flex 写在爸爸身上，孩子们就会站成一排；justify-content 管排队的方向，align-items 管另一个方向；想让某个孩子吃掉剩下的空间，就给它 flex-grow: 1。</p>
+                            <p>明天想试试用 grid 做照片墙，听说 repeat(auto-fill, minmax(150px, 1fr)) 可以不写 media query 就自动适配手机。</p>
+                        </details>
+                    </div>
+                    <footer class="post-footer">
+                        Date: 2026-10-21 16:52
+                    </footer>
+                </article>
+
+                <!-- 帖子 3：纯文字 -->
+                <article class="post" id="2026-10-14-2200">
+                    <header class="post-titlebar">
+                        这是真真的老资历
+                    </header>
+
+                    <div class="post-body">
+                        <p>现在是 2026-10-14，这个现在仅仅是测试了。</p>
+                    </div>
+
+                    <footer class="post-footer">
+                        Date: 2026-10-14 18:27
+                    </footer>
+                </article>
+            </main>
+
+            <!-- 翻页按钮：放在 nav 里，自动套用 Win98 按钮样式 -->
+            <nav class="pager">
+                <a href="#">&lt;&lt; Older posts</a>
+            </nav>
         </div>
+
+        <marquee class="vertical-marquee" direction="up" scrollamount="20">
+            <span class="vertical-text">
+                every single line is handwritten by eivanwqf!!
+            </span>
+        </marquee>
     </body>
 </html>
