@@ -24,10 +24,8 @@ body {
 }
 
 header{
-	text-shadow: 
-	1px 1px 0 #ff0000,
-	2px 2px 0 #ff8800,
-	3px 3px 0 #ff00ff;
+	text-shadow: 1px 1px 0 white;
+	animation: shadow-cycle 3s linear infinite;
 }
 
 /* 全局 h 系列的标题样式 */
@@ -125,13 +123,14 @@ figure img{
 	text-decoration: none;
 }
 
-
-/* .box{
+/* box类 */
+.box{
 	padding: 10px;
 	padding-top: 15px;
-	background-color: rgb(243, 144, 243);
-	outline: 1px solid red;
-} */
+	background-color: rgba(189, 231, 250, 0.79);
+	outline: 2px inset blueviolet;
+}
+
 
 /* 页尾后的分割线尾巴 */
 .bottom{
@@ -154,6 +153,9 @@ figure img{
 .contact img{
 	width: 40px;
 }
+.contact a{
+	text-underline-offset: 4px;
+}
 
 
 /* 开头的头像和bio */
@@ -165,6 +167,9 @@ figure img{
 }
 .intro img{
 	width: 500px;
+}
+.intro .birthdaypic{
+	width:50px;
 }
 
 /* 正文的正经字体 */
@@ -233,3 +238,19 @@ figure img{
 	100% {opacity: 100;}
 }
 
+/* 大标题文艺阴影跑马灯 */
+@keyframes shadow-cycle {
+	0%      { text-shadow: 1px 1px 0 white, 2px 2px 0 hsl(0 100% 50%); }    
+	8.33%   { text-shadow: 1px 1px 0 white, 2px 2px 0 hsl(30 100% 50%); }   
+	16.67%  { text-shadow: 1px 1px 0 white, 2px 2px 0 hsl(60 100% 50%); }   
+	25%     { text-shadow: 1px 1px 0 white, 2px 2px 0 hsl(90 100% 50%); }   
+	33.33%  { text-shadow: 1px 1px 0 white, 2px 2px 0 hsl(120 100% 50%); }  
+	41.67%  { text-shadow: 1px 1px 0 white, 2px 2px 0 hsl(150 100% 50%); }  
+	50%     { text-shadow: 1px 1px 0 white, 2px 2px 0 hsl(180 100% 50%); }  
+	58.33%  { text-shadow: 1px 1px 0 white, 2px 2px 0 hsl(210 100% 50%); }  
+	66.67%  { text-shadow: 1px 1px 0 white, 2px 2px 0 hsl(240 100% 50%); }  
+	75%     { text-shadow: 1px 1px 0 white, 2px 2px 0 hsl(270 100% 50%); }  
+	83.33%  { text-shadow: 1px 1px 0 white, 2px 2px 0 hsl(300 100% 50%); }  
+	91.67%  { text-shadow: 1px 1px 0 white, 2px 2px 0 hsl(330 100% 50%); }  
+	100%    { text-shadow: 1px 1px 0 white, 2px 2px 0 hsl(360 100% 50%); }  
+}

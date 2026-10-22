@@ -17,7 +17,7 @@ body {
 	max-width: 760px;
 	margin:0 auto;
 	/* background-color: #ececff; */
-	border: 5px inset #0000ff;
+	border: 5px dashed #0a7313;
 	padding: 8px;
 	box-sizing: border-box;
 }
