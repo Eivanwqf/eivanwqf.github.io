@@ -23,6 +23,13 @@ body {
 	box-sizing: border-box;
 }
 
+header{
+	text-shadow: 
+	1px 1px 0 #ff0000,
+	2px 2px 0 #ff8800,
+	3px 3px 0 #ff00ff;
+}
+
 /* 全局 h 系列的标题样式 */
 h1, h2, h3{
 	font-family: 'Courier New', Courier, monospace;
@@ -40,7 +47,8 @@ a:visited{
 marquee{
 	padding: 5px;
 	color:rgb(19, 146, 140);
-	text-shadow: 1px 1px 0 white;
+	text-shadow: 1px 1px 4px white;
+	font-weight: bold;
 }
 
 /* 全局 默认 文字 字体！ */
@@ -168,9 +176,13 @@ figure img{
 		serif;;
 }
 
+/* 侧面跑马灯古法手搓 */
 .vertical-text{
 	writing-mode: vertical-rl;
 	font-family: 'Courier New', Courier, monospace;
+	font-size: 80%;
+	position: relative;
+	left: -2px;
 }
 .vertical-text-chinese{
 	writing-mode: vertical-rl;
@@ -189,11 +201,18 @@ figure img{
 	z-index:100;
 
 	/* Windows98-ish style */
-	background: linear-gradient(to bottom, #000080, #1084d0, #000080);
+	background: linear-gradient(to bottom, #000080, #50a8e3, #000080);
 	background-size: 100% 200%;
 	animation: titlebar-flow 2s linear infinite;
 	color:yellow;
 	border-left: 3px inset #c0c0c0;
+}
+
+/* 底部的一些图片 tag */
+.bottomPics{
+	size: 50%;
+	width: 100px;
+	max-width: 350px;
 }
 
 @keyframes titlebar-flow{
