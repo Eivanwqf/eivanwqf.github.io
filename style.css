@@ -5,12 +5,14 @@ body {
 	background-repeat: repeat-y;
 	background-size:100% auto;
 	text-align: center;
-	padding-right: 15px;
 	font-family: 'Times New Roman', Times,
 		'Songti SC',
 		'SimSun',
 		'Noto Serif SC',
 		serif;
+}
+body:has(.vertical-marquee){
+	padding-right: 20px;
 }
 
 /* 用来装实际上显示的文字的 */
@@ -211,6 +213,27 @@ figure img{
 	animation: titlebar-flow 2s linear infinite;
 	color:yellow;
 	border-left: 3px inset #c0c0c0;
+}
+
+/* 侧边 marquee 删除键 */
+.side-close{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 23px;
+	height: 21px;
+	z-index: 100;
+
+	padding: 0;
+	background: #c00000;
+	color:white;
+	border: 2px outset #ff8080;
+	font: bold 14px Arial, sans-serief;
+	line-height: 1;
+	cursor: pointer;
+}
+.side-close:active{
+	border-style: inset;
 }
 
 /* 底部的一些图片 tag */
